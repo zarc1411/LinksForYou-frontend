@@ -25,13 +25,13 @@ const Home = () => {
           <Image src={OrganizedContent}></Image>
         </Box>
         <VStack textAlign="center" py={15} px={2} boxSize="100%">
-          <Heading size="3xl" fontFamily="PT Sans" my={[5, 10]}>
-            Read the best articles
+          <Heading size="2xl" my={[5, 10]} fontFamily="Josefin Sans">
+            Read the best articles and watch the best videos.
           </Heading>
-          <Text fontFamily="Open Sans" size="4xl" alignSelf="end">
+          <Text size="2xl" alignSelf="end" fontFamily="Josefin Sans">
             LinksForYou is a clean and organized site that contains links to
-            engrossing articles of various topics like Programming, Science,
-            Career, Health and much more!
+            engrossing articles and videos of various topics like Programming,
+            Science, Career, Health and much more!
           </Text>
         </VStack>
       </SimpleGrid>
@@ -43,6 +43,7 @@ const Home = () => {
           padding={7}
           _hover={{ background: "purple.300" }}
           marginBottom={10}
+          fontFamily="Josefin Sans"
         >
           Get Started
         </Button>

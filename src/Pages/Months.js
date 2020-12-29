@@ -12,9 +12,6 @@ import PublishArticles from "../images/PublishArticles.svg";
 import OnlineArticles from "../images/OnlineArticles.svg";
 
 const Months = () => {
-  const year = new Date().getFullYear();
-  const textColor = useColorModeValue("pink.500", "purple.500");
-
   return (
     <VStack mx={["10%", "13%", "16%", "20%"]}>
       <SimpleGrid
