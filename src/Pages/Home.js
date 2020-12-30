@@ -13,9 +13,9 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <VStack mx={["10%", "13%", "16%", "20%"]}>
+    <VStack mx={["10%", "13%", "16%", "20%"]} overflowY="hidden">
       <SimpleGrid
-        marginTop={10}
+        marginTop="5em"
         minChildWidth="10em"
         spacing="2em"
         textAlign="center"

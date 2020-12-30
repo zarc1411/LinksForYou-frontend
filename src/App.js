@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Links from "./Pages/Links";
 const App = () => {
   const currentYear = new Date().getFullYear();
+  console.log("fuck");
   return (
     <ChakraProvider theme={theme}>
       <Header />

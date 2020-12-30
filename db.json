@@ -1,0 +1,30 @@
+{
+    "January" : [
+        {
+            "id" : 1,
+            "tag" : "PROGRAMMING",
+            "name" : "New Grads: don't worry too much about the perfect first job",
+            "url" : "https://www.reddit.com/r/cscareerquestions/comments/klyxns/new_grads_dont_worry_too_much_about_the_perfect/"
+        },
+        {
+            "id" : 2,
+            "tag" : "COMPUTER SCIENCE",
+            "name" : "How Claude Shannon Invented the Future",
+            "url" : "https://www.quantamagazine.org/how-claude-shannons-information-theory-invented-the-future-20201222/"
+        }
+    ],
+    "February" : [
+        {
+            "id" : 3,
+            "tag" :"COMPUTER SCIENCE",
+            "name" : "The Computer Scientist Who Shrinks Big Data",
+            "url" : "https://www.quantamagazine.org/jelani-nelson-the-computer-scientist-who-shrinks-big-data-20201207/"
+        },
+        {
+            "id" : 4,
+            "tag" : "MATHEMATICS",
+            "name" : "How the Slowest Computer Programs Illuminate Math’s Fundamental Limits",
+            "url" : "https://www.quantamagazine.org/the-busy-beaver-game-illuminates-the-fundamental-limits-of-math-20201210/"
+        }
+    ]
+}

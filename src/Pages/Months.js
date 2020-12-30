@@ -13,7 +13,7 @@ import OnlineArticles from "../images/OnlineArticles.svg";
 
 const Months = () => {
   return (
-    <VStack mx={["10%", "13%", "16%", "20%"]}>
+    <VStack mx={["10%", "13%", "16%", "20%"]} overflowY="hidden">
       <SimpleGrid
         marginTop={10}
         minChildWidth="10em"

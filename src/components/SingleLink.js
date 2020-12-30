@@ -6,12 +6,18 @@ import {
   Box,
   useColorModeValue,
 } from "@chakra-ui/react";
+import axios from "axios";
 import React from "react";
 
 const SingleLink = ({ tag, name, domain }) => {
-  const boxBackground = useColorModeValue("purple.50", "purple.900");
+  const boxBackground = useColorModeValue("purple.500", "purple.500");
   return (
-    <Box backgroundColor={boxBackground} borderRadius="10px" width="100%">
+    <Box
+      backgroundColor={boxBackground}
+      borderRadius="10px"
+      width="100%"
+      color="white"
+    >
       <Text fontFamily="Josefin Sans" mx="1em" marginTop="1em" fontSize="1.3em">
         {tag.toUpperCase()}
       </Text>
