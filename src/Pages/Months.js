@@ -1,11 +1,4 @@
-import {
-  SimpleGrid,
-  Box,
-  Text,
-  useColorModeValue,
-  VStack,
-  Image,
-} from "@chakra-ui/react";
+import { SimpleGrid, Box, VStack, Image } from "@chakra-ui/react";
 import React from "react";
 import SingleMonth from "../components/SingleMonth";
 import PublishArticles from "../images/PublishArticles.svg";

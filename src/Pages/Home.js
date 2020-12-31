@@ -11,7 +11,6 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 const Home = () => {
-  const currentYear = new Date().getFullYear();
   return (
     <VStack mx={["10%", "13%", "16%", "20%"]} overflowY="hidden">
       <SimpleGrid
@@ -35,7 +34,7 @@ const Home = () => {
           </Text>
         </VStack>
       </SimpleGrid>
-      <Link to={`/${currentYear}`}>
+      <Link to={`/months`}>
         <Button
           bgColor="purple.500"
           color="white"

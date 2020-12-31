@@ -6,19 +6,16 @@ import { Route } from "react-router-dom";
 import Header from "./components/Header";
 import Links from "./Pages/Links";
 const App = () => {
-  const currentYear = new Date().getFullYear();
-  console.log("fuck");
   return (
     <ChakraProvider theme={theme}>
       <Header />
       <Route exact path="/">
         <Home />
       </Route>
-      <Route exact path={`/${currentYear}`}></Route>
-      <Route exact path={`/${currentYear}`}>
+      <Route exact path={`/months`}>
         <Months />
       </Route>
-      <Route path={`/${currentYear}/:month`}>
+      <Route path={`/months/:month`}>
         <Links />
       </Route>
     </ChakraProvider>
