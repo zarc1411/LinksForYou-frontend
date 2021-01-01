@@ -13,7 +13,11 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 const Home = () => {
   return (
-    <motion.div initial={{ x: -500 }} animate={{ x: 0 }}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.1 }}
+    >
       <VStack mx={["10%", "13%", "16%", "20%"]} overflowY="hidden">
         <SimpleGrid
           marginTop="5em"
@@ -36,9 +40,10 @@ const Home = () => {
             </Text>
           </VStack>
         </SimpleGrid>
+
         <motion.div
           whileHover={{ scale: 1.3 }}
-          transition={{ type: "spring", stiffness: 300 }}
+          transition={{ type: "spring", stiffness: 500 }}
         >
           <Link to={`/months`}>
             <Button
@@ -48,6 +53,9 @@ const Home = () => {
               padding={7}
               marginBottom={10}
               fontFamily="Josefin Sans"
+              _hover={{
+                backgroundColor: "purple.500",
+              }}
             >
               Get Started
             </Button>

@@ -7,7 +7,11 @@ import { motion } from "framer-motion";
 
 const Months = () => {
   return (
-    <motion.div initial={{ x: -500 }} animate={{ x: 0 }}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.1 }}
+    >
       <VStack mx={["10%", "13%", "16%", "20%"]} overflowY="hidden">
         <SimpleGrid
           marginTop={10}
