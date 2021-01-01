@@ -7,54 +7,48 @@ import { motion } from "framer-motion";
 
 const Months = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.1 }}
-    >
-      <VStack mx={["10%", "13%", "16%", "20%"]} overflowY="hidden">
-        <SimpleGrid
-          marginTop={10}
-          minChildWidth="10em"
-          spacing="2em"
-          textAlign="center"
-          padding={10}
-        >
-          <VStack margin="auto">
-            <SingleMonth path="January" />
-            <SingleMonth path="February" />
-            <SingleMonth path="March" />
-            <SingleMonth path="April" />
-            <SingleMonth path="May" />
-            <SingleMonth path="June" />
-          </VStack>{" "}
-          <Box width="100%">
-            <Image src={PublishArticles}></Image>
-          </Box>
-        </SimpleGrid>
+    <VStack mx={["10%", "13%", "16%", "20%"]} overflowY="hidden">
+      <SimpleGrid
+        marginTop={10}
+        minChildWidth="10em"
+        spacing="2em"
+        textAlign="center"
+        padding={10}
+      >
+        <VStack margin="auto">
+          <SingleMonth path="January" />
+          <SingleMonth path="February" />
+          <SingleMonth path="March" />
+          <SingleMonth path="April" />
+          <SingleMonth path="May" />
+          <SingleMonth path="June" />
+        </VStack>{" "}
+        <Box width="100%">
+          <Image src={PublishArticles}></Image>
+        </Box>
+      </SimpleGrid>
 
-        <SimpleGrid
-          marginTop={10}
-          minChildWidth="10em"
-          spacing="3em"
-          textAlign="center"
-          padding={10}
-        >
-          {" "}
-          <Box width="100%">
-            <Image src={OnlineArticles}></Image>
-          </Box>
-          <VStack margin="auto">
-            <SingleMonth path="July" />
-            <SingleMonth path="August" />
-            <SingleMonth path="September" />
-            <SingleMonth path="October" />
-            <SingleMonth path="November" />
-            <SingleMonth path="December" />
-          </VStack>
-        </SimpleGrid>
-      </VStack>
-    </motion.div>
+      <SimpleGrid
+        marginTop={10}
+        minChildWidth="10em"
+        spacing="3em"
+        textAlign="center"
+        padding={10}
+      >
+        {" "}
+        <Box width="100%">
+          <Image src={OnlineArticles}></Image>
+        </Box>
+        <VStack margin="auto">
+          <SingleMonth path="July" />
+          <SingleMonth path="August" />
+          <SingleMonth path="September" />
+          <SingleMonth path="October" />
+          <SingleMonth path="November" />
+          <SingleMonth path="December" />
+        </VStack>
+      </SimpleGrid>
+    </VStack>
   );
 };
 
