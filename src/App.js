@@ -18,7 +18,7 @@ const App = () => {
           <Months />
         </Route>
         <Route path={`/months/:month`}>
-          <Links allLinks={allLinks} linksArrayReceived={linksArrayReceived} />
+          <Links />
         </Route>
       </Switch>
     </ChakraProvider>

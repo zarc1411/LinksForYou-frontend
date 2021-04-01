@@ -3,7 +3,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useRouteMatch } from 'react-router-dom';
 import SingleLink from '../components/SingleLink';
-const Links = ({ allLinks, linksArrayReceived }) => {
+const Links = () => {
   const [allLinks, setAllLinks] = useState([]);
   const [linksArrayReceived, setLinksArrayReceived] = useState(false);
   const { url } = useRouteMatch();
