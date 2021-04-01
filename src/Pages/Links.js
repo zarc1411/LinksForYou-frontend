@@ -4,21 +4,21 @@ import React, { useEffect, useState } from 'react';
 import { useRouteMatch } from 'react-router-dom';
 import SingleLink from '../components/SingleLink';
 const Links = ({ allLinks, linksArrayReceived }) => {
-  // const [allLinks, setAllLinks] = useState([]);
-  // const [linksArrayReceived, setLinksArrayReceived] = useState(false);
-  // const { url } = useRouteMatch();
-  // useEffect(() => {
-  //   const month = url.split("/")?.[2];
-  //   axios
-  //     .get(`https://linksforyou.herokuapp.com/months/${month}`)
-  //     .then((response) => {
-  //       const arrayOfLinks = response.data[0].links;
-  //       const reversedArray = arrayOfLinks.reverse();
-  //       setAllLinks(reversedArray);
-  //       setLinksArrayReceived(true);
-  //     })
-  //     .catch((error) => console.log(error));
-  // }, [url]);
+  const [allLinks, setAllLinks] = useState([]);
+  const [linksArrayReceived, setLinksArrayReceived] = useState(false);
+  const { url } = useRouteMatch();
+  useEffect(() => {
+    const month = url.split('/')?.[2];
+    axios
+      .get(`https://linksforyou.herokuapp.com/months/${month}`)
+      .then(response => {
+        const arrayOfLinks = response.data[0].links;
+        const reversedArray = arrayOfLinks.reverse();
+        setAllLinks(reversedArray);
+        setLinksArrayReceived(true);
+      })
+      .catch(error => console.log(error));
+  }, [url]);
 
   if (allLinks.length === 0 && !linksArrayReceived) {
     return (
